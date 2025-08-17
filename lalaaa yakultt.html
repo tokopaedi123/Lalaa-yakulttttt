@@ -1,0 +1,220 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maapinn lalaaaaa</title>
+  <meta name="description" content="Halaman permintaan maaf yang manis dan tulus untuk Nirmala." />
+  <style>
+    :root {
+      --bg1: #0ea5e9; /* sky-500 */
+      --bg2: #9333ea; /* violet-600 */
+      --bg3: #ef4444; /* red-500 */
+      --card: rgba(255,255,255,.12);
+      --glass: rgba(255,255,255,.65);
+      --text: #0b1020;
+      --white: #ffffff;
+      --shadow: 0 20px 60px rgba(0,0,0,.25);
+      --radius: 24px;
+    }* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  color: var(--white);
+  background: radial-gradient(1200px 800px at 80% 10%, rgba(255,255,255,.15), transparent 55%),
+              linear-gradient(135deg, var(--bg1), var(--bg2) 50%, var(--bg3));
+  overflow-x: hidden;
+}
+
+/* Floating hearts */
+.hearts { position: fixed; inset: 0; pointer-events: none; z-index: 0; }
+.hearts span {
+  position: absolute; bottom: -10vh; left: var(--x, 50%);
+  font-size: var(--s, 18px);
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,.3));
+  animation: up 12s linear infinite;
+  opacity: .7;
+}
+@keyframes up { to { transform: translateY(-120vh) rotate(360deg); opacity: 0.2; } }
+
+main.card {
+  position: relative;
+  z-index: 1;
+  width: min(760px, 92vw);
+  margin: clamp(24px, 6vh, 64px) auto;
+  background: linear-gradient(180deg, rgba(255,255,255,.35), rgba(255,255,255,.18));
+  border: 1px solid rgba(255,255,255,.35);
+  backdrop-filter: blur(10px) saturate(120%);
+  border-radius: var(--radius);
+  padding: clamp(20px, 4vw, 40px);
+  box-shadow: var(--shadow);
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: clamp(28px, 4.5vw, 44px);
+  line-height: 1.1;
+  letter-spacing: 0.3px;
+}
+h1 .name { display: inline-block; background: rgba(255,255,255,.32); padding: 0 .5rem; border-radius: 12px; }
+
+.sub { opacity: .9; margin: 0 0 20px; font-size: clamp(14px, 2.6vw, 16px); }
+
+section { margin: 22px 0; }
+.section-title { font-weight: 700; font-size: 14px; letter-spacing: .12em; text-transform: uppercase; opacity: .9; margin-bottom: 10px; }
+
+.list {
+  display: grid; gap: 10px;
+}
+.item {
+  display: grid; grid-template-columns: 28px 1fr; gap: 10px;
+  align-items: start;
+  background: var(--card);
+  border: 1px solid rgba(255,255,255,.25);
+  padding: 12px 14px; border-radius: 16px;
+}
+.icon { display: grid; place-items: center; font-size: 18px; }
+
+.message {
+  font-size: clamp(15px, 2.8vw, 18px);
+  line-height: 1.6;
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.25);
+  padding: 14px 16px; border-radius: 16px;
+}
+
+.actions {
+  margin-top: 22px; display: flex; flex-wrap: wrap; gap: 10px;
+}
+.btn {
+  appearance: none; border: 0; cursor: pointer; text-decoration: none;
+  padding: 12px 16px; border-radius: 14px; font-weight: 700; letter-spacing: .02em;
+  color: var(--text);
+  background: var(--white);
+  transition: transform .1s ease, filter .2s ease;
+  box-shadow: 0 8px 24px rgba(0,0,0,.2);
+  user-select: none;
+}
+.btn:active { transform: translateY(1px) scale(.99); }
+.btn.primary { background: linear-gradient(180deg, #fff, #f6f6f6); }
+.btn.ghost { background: transparent; border: 1px solid rgba(255,255,255,.6); color: #fff; }
+
+footer {
+  margin-top: 18px; opacity: .9; font-size: 14px;
+}
+
+.toolbar {
+  position: fixed; right: 14px; bottom: 14px; z-index: 5;
+  display: flex; gap: 10px; flex-direction: column;
+}
+.fab { width: 48px; height: 48px; border-radius: 50%; border: 0; cursor: pointer; background: rgba(255,255,255,.9); color: var(--text); box-shadow: var(--shadow); font-size: 20px; }
+.fab:active { transform: translateY(1px) scale(.99); }
+
+.muted { opacity: .85; }
+a { color: #fff; }
+
+  </style>
+</head>
+<body>
+  <!-- Floating hearts layer -->
+  <div class="hearts" aria-hidden="true"></div>  <main class="card" role="main">
+    <h1>Maapinnnnnnn <span class="name">Nirmalaaaa</span></h1>
+    <p class="sub">Ditulis pada <span id="today"></span>, untuk Nirmala yg baik hati, cantik, dan tidak bau bawang (kayaknya)</p><section>
+  <div class="message">
+    Ehehehehehehe gomennnn semalem gwe boong sama lu, tapiiiii gwe bisa jelasinnn kok. Jadiii semalem tuhhhh pass jam 11 kannn gwe mauu tidurrr yaaa ehhh malah disamper sama temenn2, mereka pada ngajakin mainn ps tauuuu, mana maksa bangettt lagiiii mereka, dann yaudahh dehhh gwe punnn terpaksa ikutt sama mereka ehehehehe. Maapinnnnnnn aku lalaaaaa, nantiii ngga bakalan gituu lagii kok, ehehehehehe jangan marahh yaaaa 👉👈
+  </div>
+</section>
+
+<section>
+  <div class="section-title">Teguh tumbang, dia mengakui kesalahannya</div>
+  <div class="list">
+    <div class="item"><div class="icon">☝️</div><div>Gwe semalem ngga nuruttt sama lu, dann malah bergadang sampe jam 3 pagi ehehehehe</div></div>
+    <div class="item"><div class="icon">😓</div><div>Terusss gwe jugaa masihh sering ngeyel tiap kalii ngga diizinin tidurr malem sama lu</div></div>
+    <div class="item"><div class="icon">😁</div><div>Dannnnnn yg terakhirr, gomennnnnn kalau gwe akhir2 inii sering sama sukiyem (nyaman banget soalnya sama dia) ehehehehehehe</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-title">Karena ituuuu, gwe bakalan...</div>
+  <div class="list">
+    <div class="item"><div class="icon">😔</div><div>Gwe bakalan nurutttt sama lu buattt ngga gadang lagiiii</div></div>
+    <div class="item"><div class="icon">🤔</div><div>Gwe jugaaa bakalan ngga ngeyel teruss tiapppp dibilangin sama lu ehehehehe</div></div>
+    <div class="item"><div class="icon">😏</div><div>Dannnnnnn gwe bakalan terussss adaaaaa buattt lu (noooooo sukiyemmm)</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-title">Bolehkah aku memperbaikinya?</div>
+  <p class="muted">Jika lalaa bersedia, lalaa bisa menghubungiku lewat tombol di bawah ini. Gweh akan dengan senang hati menerima hukuman yg bakalan lu berikann.</p>
+  <div class="actions">
+    <a class="btn primary" id="waBtn" href="#" target="_blank" rel="noopener">Chat di WhatsApp</a>
+    <a class="btn ghost" id="emailBtn" href="#" target="_blank" rel="noopener">Kirim Email</a>
+  </div>
+</section>
+
+<footer>
+  Dengan tulus,<br/>
+  <strong class="sender">Teguhhhhhh</strong>
+</footer>
+
+  </main>  <!-- Quick customization floating buttons -->  <div class="toolbar">
+    <button class="fab" title="Sesuaikan" id="customize">⚙️</button>
+    <button class="fab" title="Salin Pesan" id="copy">📋</button>
+  </div>  <script>
+    // Tanggal hari ini (lokal Indonesia)
+    const today = new Date();
+    const opts = { weekday: 'long', day: '2-digit', month: 'long', year: 'numeric' };
+    document.getElementById('today').textContent = today.toLocaleDateString('id-ID', opts);
+
+    // Generate floating hearts
+    const hearts = document.querySelector('.hearts');
+    const symbols = ['😁','🤩','😝','😿','😔','🙁','😠'];
+    for (let i=0; i<24; i++) {
+      const s = document.createElement('span');
+      s.textContent = symbols[Math.floor(Math.random()*symbols.length)];
+      s.style.setProperty('--x', Math.floor(Math.random()*100) + '%');
+      s.style.setProperty('--s', (14 + Math.random()*22) + 'px');
+      s.style.animationDelay = (Math.random()*-12)+'s';
+      hearts.appendChild(s);
+    }
+
+    // Simple customization flow via prompt
+    const $ = (q) => document.querySelector(q);
+    const nameEl = $('.name');
+    const senderEl = $('.sender');
+    const waBtn = $('#waBtn');
+    const emailBtn = $('#emailBtn');
+
+    function updateLinks(name, sender, phone, email) {
+      // WhatsApp deep link
+      const text = encodeURIComponent(`Halo ${name},\n\nAku minta maaf atas kejadian kemarin. Kalau kamu berkenan, bolehkah kita bicara sebentar?\n\n— ${sender}`);
+      waBtn.href = phone ? `https://wa.me/${phone.replace(/\D/g,'')}?text=${text}` : `https://wa.me/?text=${text}`;
+      // mailto link
+      emailBtn.href = email ? `mailto:${email}?subject=${encodeURIComponent('Maaf ya, ' + name)}&body=${text}` : `mailto:?subject=${encodeURIComponent('Maaf ya, ' + name)}&body=${text}`;
+    }
+
+    // Defaults
+    updateLinks(nameEl.textContent.trim(), senderEl.textContent.replace(/[]/g,'').trim(), '', '');
+
+    $('#customize').addEventListener('click', () => {
+      const name = prompt('Nama penerima?', nameEl.textContent.trim()) || nameEl.textContent.trim();
+      const sender = prompt('Namamu?', senderEl.textContent.replace(/[]/g,'').trim()) || senderEl.textContent.trim();
+      const phone = prompt('Nomor WhatsApp (opsional, awali dengan kode negara, mis. 62812xxxx)?', '') || '';
+      const email = prompt('Email tujuan (opsional)?', '') || '';
+      nameEl.textContent = name;
+      senderEl.textContent = sender;
+      updateLinks(name, sender, phone, email);
+      alert('Selesai! Nama & tautan diperbarui.');
+    });
+
+    $('#copy').addEventListener('click', async () => {
+      const text = `Gomennnnnn lalaaaaa ehehehehehehe, ${nameEl.textContent} \n\nGwe janjiii ngga bakalan gituuu lagiiii kok, pastiiiii mulaiiii besokk mahhh gwe bakalan tidurrrr sore terusssss, dannnn bergadang hanyaa mitosss bagi gwe mahhh ehehehehehehe\n\${senderEl.textContent}`;
+      try {
+        await navigator.clipboard.writeText(text);
+        alert('Pesan disalin ke papan klip!');
+      } catch (e) {
+        alert('Gagal menyalin. Silakan pilih dan salin manual.');
+      }
+    });
+  </script></body>
+</html>
